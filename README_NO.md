@@ -9,10 +9,10 @@
   - [Hvorfor krasjer spillet mitt, er treg eller har grafikk problemer?](#hvorfor-krasjer-spillet-mitt-er-treg-eller-har-grafikk-problemer)
   - [Spillet mitt crasher etter en stund men fungerer fint uten esync](#spillet-mitt-crasher-etter-en-stund-men-fungerer-fint-uten-esync)
   - [Spillet viser ingen tekst](#spillet-viser-ingen-tekst)
-  - [Noen spill som Witcher 3 mangler fiender eller tekstur](#some-games-like-witcher-3-have-missing-texturesenemies)
-  - [Noen reporter sier de fikk spillet til å kjøre, ved å installere ekstra programvare. Hvordan?](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that)
-  - [Hvordan kjører jeg Windows spill jeg ikke eier på Steam?](#how-do-i-run-windows-games-i-dont-own-on-steam)
-  - [Spill lagret på min Windows partisjon (NTFS) vill ikke starte](#games-stored-on-my-windows-partition-ntfs-wont-start)
+  - [Noen spill som Witcher 3 mangler fiender eller tekstur](#noen-spill-som-witcher-3-mangler-fiender-eller-tekstur)
+  - [Noen rapporter sier de fikk spillet til å kjøre, ved å installere ekstra programvare. Hvordan?](#noen-rapporter-sier-de-fikk-spillet-til-å-kjøre-ved-å-installere-ekstra-programvare-hvordan)
+  - [Hvordan kjører jeg Windows spill som ikke er på Steam?](#hvordan-kjører-jeg-windows-spill-som-ikke-er-på-steam)
+  - [Spill lagret på min Windows partisjon (NTFS) vill ikke starte](#spill-lagret-på-min-windows-partisjon-ntfs-vill-ikke-starte)
 ## Hvorfor krasjer spillet mitt, er treg eller har grafikk problemer?
 
 #### Sørg for at maskinen er oppdatert og at du har installert siste grafikk kort driver.
@@ -98,9 +98,9 @@ sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
 ##
 For å se om Vulkan fungerer, kjør følgende kommando: `vulkaninfo`
 
-Her er et [Example](https://raw.githubusercontent.com/NoXPhasma/protondb_faq/master/VulkaninfoExample.png) På hvordan det skal se ut.
+Her er et [Eksempel](https://raw.githubusercontent.com/NoXPhasma/protondb_faq/master/VulkaninfoExample.png) På hvordan det skal se ut.
 
-Hvis du får: "Cannot create Vulkan instance." Prøv å restart din PC. Hvis du fremdeles får feilmeldingen og du er sikker på at alle pakker er installert. Spør etter hjelp på Discord: [Discord](https://discord.gg/uuwK9EV) 
+Hvis du får: "Cannot create Vulkan instance." Prøv å restart din PC. Hvis du fremdeles får feilmeldingen og du er sikker på at alle pakker er installert. Spør etter hjelp på [Discord](https://discord.gg/uuwK9EV).
 
 ## Spillet mitt crasher etter en stund men fungerer fint uten esync
 
@@ -112,41 +112,42 @@ Noen spill er avhengig av at Windows fonter er installert. Etter Proton versjon 
 
 For å bytte Proton versjon, Gå til Steam instillinger. Der vil du ha et valg som heter Steam Play gå til denne. Huk av på valget "Bruk dette verktøyet i stedet for spillspesifikke valg fra Steam". Velg så Proton versjon fra menyen under, Sørg for å velge versjon 3.16-4 eller høyere.
 
-## Some games like Witcher 3 have missing textures/enemies
+## Noen spill som Witcher 3 mangler fiender eller tekstur
 
-This is fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) and Vulkan 1.1.88. Unfortunately at time of this writing, you need beta drivers for Nvidia (396.54.09) and AMD users need at least Mesa version 18.3.
+Dette er løst i DXVK versjon [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) og Vulkan 1.1.88.
+Men pr nå krever dette at du har Nvidia Beta drivere (396.54.09) og AMD brukere trenger Mesa versjon 18.3.
 
-## Some reports say they made the game running by installing some software, how do I do that?
+## Noen rapporter sier de fikk spillet til å kjøre, ved å installere ekstra programvare. Hvordan?
 
-There are two ways to install additional software into the games prefix:
+Det er 2 måter å installere ekstra programvare på i spill prefiksen:
 
-#### Use of Winetricks
-Make sure you have winetricks installed on your system. This package should be in your distributions repository.
+#### Ved bruk av Winetricks
+Sørg for at du har winetricks installert på din maskin. Dette burde være i pakkebehandler brønnen til din distro.
 
-Open a Terminal and use
+Åpne en terminal og skriv:
 ```
 WINEPREFIX=(Steam-folder)/steamapps/compatdata/(GAME-ID)/pfx/ winetricks
 ```
-(GAME-ID) must be replaced with the game id for example 4000 for Garry´s Mod, you can use [SteamDB](https://steamdb.info) to find out what id your game have.
+(GAME-ID) Må byttes ut med iden til spillet.  For eksempel id 4000 for spillet Garry's Mod. Du kan bruke [SteamDB](https://steamdb.info) for å finne ut hvilke id spillet ditt har.
 
-(Steam-folder) must be replaced with your .steam folder loaction.
+(Steam-folder) Må byttes ut med din .steam mappe lokasjon
 
-Here is an example
+Her er et eksempel:
 
 ```
 WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
 ```
 ##
-#### Use of Tools
+#### Ved bruk av verktøy
 
 The two most popular currently are [Protontricks](https://github.com/Sirmentio/protontricks) and [ProtonFixes](https://github.com/simons-public/protonfixes).
 
-Please read the instructions about those tools on their respective sites.
+Vær vennlig og les instruksene til verktøyene på deres nettsider.
 
-## How do I run Windows games I don't own on Steam?
+## Hvordan kjører jeg Windows spill som ikke er på Steam?
 
-To run games which are not on Steam, you can use [Lutris](https://lutris.net/) to run them with Wine. Lutris is a game manager which offers support for a lot of different compatibility layers/emulators, including Wine/Proton.
+For å kjøre spill som ikke er på steam, da kan du bruke [Lutris](https://lutris.net/) for å kjøre de med Wine. Lutris er en spill behandler som tilbyd støtte for mange ulike kompatibilitets lag og emulatorer, Inkludert Wine/proton
 
-## Games stored on my Windows partition (NTFS) won't start
+## Spill lagret på min Windows partisjon (NTFS) vill ikke starte
 
-By default Linux mounts NFTS partitions only writable by Root. [WIP]
+Som standard monterer Linux ntfs partisjoner som kun skrivbar av Rot bruker (Root). [WIP]
