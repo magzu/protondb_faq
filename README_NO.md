@@ -6,7 +6,7 @@
 -  Italian (Snart)
 
 ## Innholdsfortegnelse
-  - [Hvorfor krasjer spillet mitt, er treg eller har grafikk problemer?](#why-do-my-games-crash-on-start-run-very-slow-or-have-rendering-issues)
+  - [Hvorfor krasjer spillet mitt, er treg eller har grafikk problemer?](#hvorfor-krasjer-spillet-mitt-er-treg-eller-har-grafikk-problemer)
   - [Spillet mitt crasher etter en stund men fungerer fint uten esync](#my-game-crashes-after-a-while-but-works-fine-without-esync)
   - [Spillet viser ingen tekst](#the-game-doesnt-show-any-text)
   - [Noen spill som Witcher 3 mangler fiender eller tekstur](#some-games-like-witcher-3-have-missing-texturesenemies)
