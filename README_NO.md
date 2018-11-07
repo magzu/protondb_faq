@@ -7,8 +7,8 @@
 
 ## Innholdsfortegnelse
   - [Hvorfor krasjer spillet mitt, er treg eller har grafikk problemer?](#hvorfor-krasjer-spillet-mitt-er-treg-eller-har-grafikk-problemer)
-  - [Spillet mitt crasher etter en stund men fungerer fint uten esync](#my-game-crashes-after-a-while-but-works-fine-without-esync)
-  - [Spillet viser ingen tekst](#the-game-doesnt-show-any-text)
+  - [Spillet mitt crasher etter en stund men fungerer fint uten esync](#spillet-mitt-crasher-etter-en-stund-men-fungerer-fint-uten-esync)
+  - [Spillet viser ingen tekst](#spillet-viser-ingen-tekst)
   - [Noen spill som Witcher 3 mangler fiender eller tekstur](#some-games-like-witcher-3-have-missing-texturesenemies)
   - [Noen reporter sier de fikk spillet til å kjøre, ved å installere ekstra programvare. Hvordan?](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that)
   - [Hvordan kjører jeg Windows spill jeg ikke eier på Steam?](#how-do-i-run-windows-games-i-dont-own-on-steam)
